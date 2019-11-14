@@ -2,6 +2,9 @@
 //Init
 const github = new Github();
 
+//Init ui
+const ui = new UI();
+
 // Search input
 
 const searchUser = document.getElementById('searchUser');
@@ -22,6 +25,8 @@ if(userText !== ''){
 
     } else {
       //Show profile
+      ui.showProfile(data.profile);
+
     }
   })
 } else {

@@ -1,11 +1,10 @@
+
 function getJSN(yourUrl){
   let http = new XMLHttpRequest(); // a new request
   http.open("GET",yourUrl,false);
   http.send(null);
   return http.responseText;          
 }
-
-
 
 let client = JSON.parse(getJSN('/GitHubFinder/secret.json'));
 let id_c = client.client_id;
